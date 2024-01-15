@@ -29,14 +29,16 @@
 .reply-card .form-control {
   font-size: 1em;
 }
-.modal-dialog {
-}
+.modal-dialog,
 .modal-content {
-  width: 320px;
-  margin: auto auto;
+  width: 380px;
+  padding: 1.25em;
 }
-.modal-body .p {
-  font-weight: 400;
+.modal-body {
+    font-size: 1.25em;
+}
+.modal-body button {
+    font-weight: 700;
 }
 @media screen and (min-width: 576px) {
   .reply-card {

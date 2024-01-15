@@ -21,7 +21,7 @@ const ReplyCard = ({
   const [showModal, setShowModal] = useState(false);
   //   console.log("in reply card", rep);
   const { comments, setComments } = useContext(CommentsContext);
-//   console.log({ parentId });
+  //   console.log({ parentId });
   const handleContentChange = (event) => {
     const value = event.target.value;
     if (value !== null && value.trim().length > 0) {
@@ -48,7 +48,6 @@ const ReplyCard = ({
     } else {
       console.log("delete clicked", rep.id);
       setShowModal(true);
-      onDeleteClickInReply(rep.id);
     }
   };
 
@@ -63,6 +62,7 @@ const ReplyCard = ({
   };
 
   const handleDelete = () => {
+    onDeleteClickInReply(rep.id);
     setShowModal(false);
   };
 
